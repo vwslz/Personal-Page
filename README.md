@@ -1,6 +1,6 @@
 # Personal Page
 
-## [Home](https://vwslz.github.io/Personal-Page/)
+## [Home](https://vwslz.github.io/vwslz/.)
 
 ## Blog
 

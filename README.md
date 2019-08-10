@@ -2,6 +2,6 @@
 
 ## [Home](https://vwslz.github.io/vwslz/.)
 
-## Blog
+## [Blog](https://vwslz.github.io/vwslz/blog.html)
 
-## Photography
+## [Photography](https://vwslz.github.io/vwslz/gallery.html)

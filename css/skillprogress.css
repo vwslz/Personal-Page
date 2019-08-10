@@ -109,7 +109,7 @@
   background: #898d90;
 }
 .progress-bar.theme:after {
-  background: #898d90;
+  background: rgba(54,55,56, 0.5);
 }
 .progress-bar.theme span {
   color: rgba(54,55,56, 0.5);

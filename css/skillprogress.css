@@ -1,0 +1,116 @@
+.progress-wrap h3 {
+  font-size: 16px;
+  font-family: "Quicksand", Arial, sans-serif;
+  margin-bottom: 10px; }
+
+.progress {
+  height: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #f2f3f7;
+  overflow: visible; }
+
+.progress-bar {
+  background: #2c98f0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #000;
+  font-weight: 600;
+  text-align: right;
+  position: relative;
+  overflow: visible;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px; }
+  .progress-bar:after {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #2c98f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  .progress-bar span {
+    position: absolute;
+    top: -22px;
+    right: 0; }
+  .progress-bar.blue {
+    background: #2c98f0; }
+    .progress-bar.blue:after {
+      background: #2c98f0; }
+    .progress-bar.blue span {
+      color: #2c98f0; }
+  .progress-bar.red {
+    background: #ec5453; }
+    .progress-bar.red:after {
+      background: #ec5453; }
+    .progress-bar.red span {
+      color: #ec5453; }
+  .progress-bar.yellow {
+    background: #f9bf3f; }
+    .progress-bar.yellow:after {
+      background: #f9bf3f; }
+    .progress-bar.yellow span {
+      color: #f9bf3f; }
+  .progress-bar.purple {
+    background: #a84cb8; }
+    .progress-bar.purple:after {
+      background: #a84cb8; }
+    .progress-bar.purple span {
+      color: #a84cb8; }
+  .progress-bar.dark-green {
+    background: #2fa499; }
+    .progress-bar.dark-green:after {
+      background: #2fa499; }
+    .progress-bar.dark-green span {
+      color: #2fa499; }
+  .progress-bar.dark-blue {
+    background: #4054b2; }
+    .progress-bar.dark-blue:after {
+      background: #4054b2; }
+    .progress-bar.dark-blue span {
+      color: #4054b2; }
+
+.progress-bar.salmon {
+  background: #FA8072;
+}
+.progress-bar.salmon:after {
+  background: #FA8072;
+}
+.progress-bar.salmon span {
+  color: #FA8072;
+}
+.progress-bar.green {
+  background: #00b300;
+}
+.progress-bar.green:after {
+  background: #00b300;
+}
+.progress-bar.green span {
+  color: #00b300;
+}
+.progress-bar.violet  {
+  background: #EE82EE;
+}
+.progress-bar.violet:after {
+  background: #EE82EE;
+}
+.progress-bar.violet span {
+  color: #EE82EE;
+}
+.progress-bar.theme  {
+  background: #898d90;
+}
+.progress-bar.theme:after {
+  background: #898d90;
+}
+.progress-bar.theme span {
+  color: rgba(54,55,56, 0.5);
+}

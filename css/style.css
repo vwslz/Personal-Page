@@ -104,3 +104,21 @@ body {
 		background-color: rgba(255,255,255, 0.8);
 	}
 }
+
+.blog-single h3{
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.blog-single p{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.blog-post .post-metas .post-meta a {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #898d90;
+	display: inline-block;
+}

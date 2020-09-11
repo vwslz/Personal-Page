@@ -125,10 +125,326 @@
 
 						</article>
 					</div>
+
+					<div class="blog-post">
+
+						<h3 class="post-title">
+              Q&A Notes
+						</h3>
+
+						<div class="container py-2 mt-4 mb-4">
+
+					    <!-- Introduction card -->
+					    <div class="row no-gutters">
+					      <div class="col-sm py-2">
+					        <div class="card border-secondary shadow">
+					          <div class="card-body">
+					            <div class="float-right text-secondary small"><i class="fas fa-heart"></i></div>
+					            <h4 class="card-title text-dark">Q&A</h4>
+					            <p class="card-text">For the reference and for the future correction.</p>
+					            <button id="sessions" class="btn btn-sm btn-outline-secondary dropdown-toggle"
+					             type="button" data-toggle="dropdown"
+					            aria-haspopup="true" aria-expanded="false">Peter</button>
+					            <div class="dropdown-menu border" aria-labelledby="sessions">
+					              <a href="index.html#session-1" class="dropdown-item text-muted">为什么测不准？</a>
+					              <a href="index.html#session-2" class="dropdown-item text-muted">坐标系为什么不可以人为设定？</a>
+					              <a href="index.html#session-3" class="dropdown-item text-muted">设置一个两边是统一的坐标系？</a>
+					              <a href="index.html#session-4" class="dropdown-item text-muted">设置一个包含整个系统的坐标系？</a>
+					            </div>
+					          </div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <h5 class="m-2">
+					          <span class="badge badge-pill bg-secondary">&nbsp;</span>
+					        </h5>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm"> <!--spacer--> </div>
+					    </div>
+
+					    <!-- Peter:为什么测不准？ -->
+					    <div id="session-1" class="row no-gutters">
+					      <div class="col-sm py-2">
+					        <div class="card shadow">
+					          <div class="card-body">
+					            <div class="float-right text-muted small"></div>
+					            <h4 class="card-title">Q1</h4>
+					            <p class="card-text">为什么测不准？</p>
+					          </div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <h5 class="m-2">
+					          <span class="badge badge-pill bg-light border">&nbsp;</span>
+					        </h5>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm"> <!--spacer--> </div>
+					    </div>
+
+					    <div class="row no-gutters">
+					      <div class="col-sm"> <!--spacer--> </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm py-2">
+					        <div class="card">
+					          <div class="card-body">
+					            <h4 class="card-title">Peter:</h4>
+					            <p class="card-text">
+												初始状态测不准，导致你即便旋转之后的结果，还受最初状态影响。就比如一开始有4个硬币随便乱扔，正反你不知道。然后你的旋转其实是做了一个统一的操作，比如，把所有的硬币，都翻过来。但是因为你之前就不知道哪一面朝上，所以你全部翻过来之后，还是不知道那一面朝上，但是你知道你已经把所有的翻面了，所以，你试图找一个算法，也就是翻面的方法，导致你最后想要的结果都被翻出来，然后最后测你想要的那个结果。
+											</p>
+											<p>
+												那个，复制信号的例子。一开始alice 给 bob发一个qubit的信息，如果测得准，那就是1qubit直通过去，但是它先用一个H门，反转一下未知信息，让它从确定态变为纠缠态，此时两边都有可能是这个qubit了，然后传到对面，再反转回来。但是由于一开始的信息你不知道，所以最后的你也不知道，才需要测量。你每次反转，都导致basis发生变化。
+											</p>
+											<p>
+												旋转角度的时候，就等于变相改变了基。就是线代里的，空间反转。
+											</p>
+					          </div>
+					        </div>
+					        <div style="height: 20px;"></div>
+					      </div>
+					    </div>
+
+							<!-- Peter:量子的坐标系为什么不可以人为设定？ -->
+					    <div id="session-2" class="row no-gutters">
+					      <div class="col-sm py-2">
+					        <div class="card shadow">
+					          <div class="card-body">
+					            <div class="float-right text-muted small"></div>
+					            <h4 class="card-title">Q2</h4>
+					            <p class="card-text">比如温度可以人为设定冰水混合物是0°，那量子的坐标系为什么不可以人为设定？</p>
+					          </div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <h5 class="m-2">
+					          <span class="badge badge-pill bg-light border">&nbsp;</span>
+					        </h5>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm"> <!--spacer--> </div>
+					    </div>
+
+					    <div class="row no-gutters">
+					      <div class="col-sm"> <!--spacer--> </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm py-2">
+					        <div class="card">
+					          <div class="card-body">
+					            <h4 class="card-title">Peter:</h4>
+					            <p class="card-text">
+												|0>和|1>，|+>和|->就是你人为设定的
+											</p>
+					          </div>
+					        </div>
+					        <div style="height: 20px;"></div>
+					      </div>
+					    </div>
+
+							<!-- Peter:设置一个两边是统一的坐标系？ -->
+					    <div id="session-3" class="row no-gutters">
+					      <div class="col-sm py-2">
+					        <div class="card shadow">
+					          <div class="card-body">
+					            <div class="float-right text-muted small"></div>
+					            <h4 class="card-title">Q3</h4>
+					            <p class="card-text">两边的basis可以不一样，是不能设置一个两边是统一的坐标系？</p>
+					          </div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <h5 class="m-2">
+					          <span class="badge badge-pill bg-light border">&nbsp;</span>
+					        </h5>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm"> <!--spacer--> </div>
+					    </div>
+
+					    <div class="row no-gutters">
+					      <div class="col-sm"> <!--spacer--> </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm py-2">
+					        <div class="card">
+					          <div class="card-body">
+					            <h4 class="card-title">Peter:</h4>
+					            <p class="card-text">
+												你现在有一个海平面，对吧，你的基是海平面。海平面上有个海鸥，海鸥的高度是基于海平面的，现在你出于某种原因，把海鸥和海水一起装进一个大鱼缸，然后反转了。反转之后，海鸥的高度，就要基于浴缸里的水平面高度了，所以基就变了，因为海鸥和海水都被相对移动了
+											</p>
+					          </div>
+					        </div>
+					        <div style="height: 20px;"></div>
+					      </div>
+					    </div>
+
+							<!-- Peter:设置整个系统的坐标系？ -->
+					    <div id="session-4" class="row no-gutters">
+					      <div class="col-sm py-2">
+					        <div class="card shadow">
+					          <div class="card-body">
+					            <div class="float-right text-muted small"></div>
+					            <h4 class="card-title">Q4</h4>
+					            <p class="card-text">
+												我们可以设定一个能包含海鸥，海平面，浴缸的坐标系吗？我们在坐标系里观测。
+											</p>
+					          </div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <h5 class="m-2">
+					          <span class="badge badge-pill bg-light border">&nbsp;</span>
+					        </h5>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm"> <!--spacer--> </div>
+					    </div>
+
+					    <div class="row no-gutters">
+					      <div class="col-sm"> <!--spacer--> </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm py-2">
+					        <div class="card">
+					          <div class="card-body">
+					            <h4 class="card-title">Peter:</h4>
+					            <p class="card-text">
+												如果你设定了一个大的坐标系，类似于世界坐标系，那会导致你的基，就不再是正交的了。不满足正交归一，就无法用操作符进行操作了。
+											</p>
+					          </div>
+					        </div>
+					        <div style="height: 20px;"></div>
+					      </div>
+					    </div>
+
+					    <!-- Function: End -->
+					    <div id="session-thanks" class="row no-gutters">
+					      <div class="col-sm py-2">
+					        <div class="card border-secondary shadow">
+					          <div class="card-body">
+					            <div class="float-right text-muted small"></div>
+					            <h4 class="card-title">To be continued...</h4>
+					            <p class="card-text">The world is waiting to be explored.</p>
+					          </div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					        <h5 class="m-2">
+					          <span class="badge badge-pill bg-secondary border">&nbsp;</span>
+					        </h5>
+					        <div class="row h-50">
+					          <div class="col border-right">&nbsp;</div>
+					          <div class="col">&nbsp;</div>
+					        </div>
+					      </div>
+
+					      <div class="col-sm py-2">
+					        <div class="card border-secondary shadow">
+					          <div class="card-body">
+					            <h4 class="card-title">Learner</h4>
+					            <p class="card-text">元气少年vwslz</p>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+					</div>
+
 				</div>
 			</div>
 		</div>
-	</div>
+
 
 	</div>
 

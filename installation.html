@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b94f7d9384.js"></script>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="css/webflow.css">
+	<link rel="stylesheet" href="css/animate.css"/>
+  <!-- Bootstrap Gallery Template
+  @link https://colorlib.com/wp/free-bootstrap-gallery-templates/}
+  @author colorlib
+  @version 1.0-->
+  <link rel="stylesheet" href="css/colorlib.css"/>
+
+	<link rel="stylesheet" href="css/style.css"/>
+
+  <title>Yimin Zhu's Blog</title>
+</head>
+
+<body>
+	<div class="spacial-controls">
+		<!-- <div class="search-switch"><i class="fas fa-search"></i></div> -->
+		<div class="nav-switch-warp">
+			<div class="nav-switch">
+				<div class="ns-bar"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-warp">
+		<header class="header-section">
+			<div class="header-close">
+				<i class="fa fa-times"></i>
+			</div>
+			<div class="header-warp">
+        <a href="" class="site-logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<i class="fas fa-th menu-icon"></i>
+				<ul class="main-menu">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./todo.html">Todo</a></li>
+					<li><a href="./skill.html">Skill</a></li>
+					<li class="active"><a href="./blog.html">Blog</a></li>
+					<li><a href="./gallery.html">Photography</a></li>
+					<li><a href="./highlight.html">highlight</a></li>
+				</ul>
+				<div class="social-links-warp">
+					<div class="social-links">
+						<a href="heart.html"><i class="fas fa-heart"></i></a>
+						<a href="https://github.com/vwslz"><i class="fab fa-github"></i></a>
+						<a href="https://www.instagram.com/yimin_zhu/"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.facebook.com/YiminZhuViolet"><i class="fa fa-facebook"></i></a>
+						<a href="https://fontawesome.com/icons/flickr?style=brands"><i class="fa fa-flickr"></i></a>
+					</div>
+          <div class="social-text"></div>
+				</div>
+			</div>
+		</header>
+
+    <div class="page-section blog-page">
+			<div class="blog-warp">
+				<div class="blog-track">
+					<div class="blog-post">
+						<h3 class="post-title">Installation</h3>
+						<div class="post-metas">
+              <div class="post-meta"><a href="#check">Check Version</a></div> |
+							<div class="post-meta"><a href="#dgl">DGL@2020.01.13</a></div>
+
+						</div>
+						<article class="blog-single">
+
+              <h3 id="check">Check Version</h3>
+
+              <p>
+                Cuda: nvcc --version <br>
+                CudaTool: conda list cudatoolkit
+              </p>
+
+							<h3 id="dgl">DGL</h3>
+
+              <p>
+                System: Windows 10 x64<br>
+                Date: 2020.01.13<br>
+                Python: 3.8<br>
+                CUDA: 11.0<br>
+                CudaTool: 10.2
+              </p>
+
+              <h5>Install from conda/pip <font class="to-green">[Succeed]</font></h5>
+
+              <p>
+								Failed -> Fixed. <br>
+                Reason: Changed cuda version 11.0 -> 10.2 because CudaTool is 10.2 although cuda is 11.0.
+							</p>
+
+              <h5>Install from source</h5>
+
+              <p>
+								git clone --recurse-submodules https://github.com/dmlc/dgl.git<br>
+                cd dgl<br>
+                git submodule update --init --recursive
+							</p>
+
+              <h5>Using conda <font class="to-red">[F]</font></h5>
+
+              <p>
+                conda install cmake m2w64-gcc m2w64-make<br>
+                md build<br>
+                cd build<br>
+                cmake -DCMAKE_CXX_FLAGS="-DDMLC_LOG_STACK_TRACE=0 -DDGL_EXPORTS" -DCMAKE_MAKE_PROGRAM=mingw32-make .. -G "MinGW Makefiles"<br>
+                mingw32-make (<font class="to-red">Failed</font>. Probably caused by different generator, used to be "MSYS Makefiles". CMake documentation suggestion to change when build under a Windows command prompt.)
+              </p>
+
+              <h5>Using MSBuild <font class="to-red">[F]</font></h5>
+
+              <p>
+                <em><a href="https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017">MS Build Tools</a>: Visual Studio 2019 (Community)</em><br>
+                <em><a href="https://cmake.org/download/">CMake on Windows</a>: Windows win64-x64 Installer (cmake-3.19.3-win64-x64.msi)</em><br>
+                MD build<br>
+                CD build<br>
+                cmake -DCMAKE_CXX_FLAGS="/DDGL_EXPORTS" -DCMAKE_CONFIGURATION_TYPES="Release" .. -G "Visual Studio 16 2019" -A x64<br>
+                <em>Run x64 Native tools command prompt for VS 2019</em><br>
+                msbuild dgl.sln<br>
+                cd ..\python<br>
+                python setup.py install (<font class="to-red">Failed</font>. Probably caused by different generator, used to be 2017.)
+              </p>
+
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--====== Javascripts & Jquery ======-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/circle-progress.min.js"></script>
+	<script src="js/colorlib.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

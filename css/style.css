@@ -130,3 +130,11 @@ body {
 	color: #898d90;
 	display: inline-block;
 }
+
+.to-red {
+	color: red;
+}
+
+.to-green {
+	color: green;
+}

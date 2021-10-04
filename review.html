@@ -143,6 +143,9 @@
 											 type="button" data-toggle="dropdown"
 											aria-haspopup="true" aria-expanded="false">Select</button>
 											<div class="dropdown-menu border" aria-labelledby="spds">
+												<a href="#" class="dropdown-item text-dark disabled">Github</a>
+												<a href="review.html#pg-gb-token" class="dropdown-item text-muted">Authentication Through Token</a>
+										    <div class="dropdown-divider"></div>
 												<a href="#" class="dropdown-item text-dark disabled">Stampede</a>
 												<a href="review.html#pg-spd-acn" class="dropdown-item text-muted">Access Computing Node</a>
 										    <div class="dropdown-divider"></div>
@@ -167,6 +170,67 @@
 							</div>
 
 							<div class="col-sm"> <!--spacer--> </div>
+						</div>
+
+						<!-- Github: Change Your GitHub Remote Authentication from Username + Password to Personal Access Token -->
+						<div id="pg-gb-token" class="row no-gutters">
+							<div class="col-sm py-2">
+								<div class="card shadow">
+									<div class="card-body">
+										<div class="float-right text-muted small"></div>
+										<h4 class="card-title">Github</h4>
+										<p class="card-text">Authentication Through Token</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+								<div class="row h-50">
+									<div class="col border-right">&nbsp;</div>
+									<div class="col">&nbsp;</div>
+								</div>
+								<h5 class="m-2">
+									<span class="badge badge-pill bg-light border">&nbsp;</span>
+								</h5>
+								<div class="row h-50">
+									<div class="col border-right">&nbsp;</div>
+									<div class="col">&nbsp;</div>
+								</div>
+							</div>
+
+							<div class="col-sm"> <!--spacer--> </div>
+						</div>
+
+						<div class="row no-gutters">
+							<div class="col-sm"> <!--spacer--> </div>
+
+							<div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+								<div class="row h-50">
+									<div class="col border-right">&nbsp;</div>
+									<div class="col">&nbsp;</div>
+								</div>
+								<div class="row h-50">
+									<div class="col border-right">&nbsp;</div>
+									<div class="col">&nbsp;</div>
+								</div>
+							</div>
+
+							<div class="col-sm py-2">
+								<div class="card">
+									<div class="card-body">
+										<p class="card-text">
+											1. git remote remove origin
+										</p>
+										<p>
+											2. git remote add origin https://<TOKEN>@github.com/<USERNAME>/<REPO>.git
+										</p>
+										<p>
+											3. git remote -v (validation)
+										</p>
+									</div>
+								</div>
+								<div style="height: 20px;"></div>
+							</div>
 						</div>
 
 						<!-- Stampede: Access Computing Node -->
